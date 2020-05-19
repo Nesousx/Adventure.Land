@@ -1,22 +1,22 @@
 function loadCharacters(){
-	start_character("Magos", "MainLoop");
-	start_character("Hierophant", "MainLoop");
-	start_character("Patroclus", "MainLoop");
+	start_character("Redonx", "MainLoop");
+	start_character("Mallet", "MainLoop");
+	start_character("Bobbynator", "MainLoop");
 	log("Loading Characters...");
 	setTimeout(initParty, 8000);
 }
 
 function initParty(){
-	send_party_invite("Magos");
-	send_party_invite("Hierophant");
-	send_party_invite("Patroclus");
+	send_party_invite("Redonx");
+	send_party_invite("Mallet");
+	send_party_invite("Bobbynator");
 	log("Party Invites sent!");
 }
 
 function stopCharacters(){
-	stop_character("Magos");
-	stop_character("Hierophant");
-	stop_character("Patroclus");
+	stop_character("Redonx");
+	stop_character("Mallet");
+	stop_character("Bobbynator");
 	log("Characters stopped!");
 }
 
