@@ -6,18 +6,19 @@ load_code("priestSkills");
 load_code("rangerSkills");
 
 //Hotkeys!
-map_key("5", "snippet", "loadCharacters()")
-map_key("6", "snippet", "initParty()")
-map_key("7", "snippet", "stopCharacters()")
+map_key("3", "snippet", "loadCharacters()")
+map_key("4", "snippet", "initParty()")
+map_key("5", "snippet", "stopCharacters()")
 
 //Custom Settings
+let ranger_name = "Redonx";
 //Farming spots are found in G.maps.main
-const farmMonsterName = "arcticbee";
-const farmMap = "winterland";
-const farmMonsterNr = 10;
-//const farmMonsterName = "snake";
-//const farmMap = "main";
-//const farmMonsterNr = 6;
+//const farmMonsterName = "arcticbee";
+//const farmMap = "winterland";
+//const farmMonsterNr = 10;
+const farmMonsterName = "snake";
+const farmMap = "main";
+const farmMonsterNr = 6;
 const merchantName = "Bobbynator";
 const healthPotThreshold = 0.95, manaPotThreshold = 0.85;
 
@@ -26,7 +27,6 @@ setInterval(tier2Actions, 3000); // Loops every 3 seconds.
 
 function main(){
     //If Character is dead, respawn
-	//
     if (character.rip) setTimeout(respawn, 15000);  
     //If character is moving, do nothing
     if(is_moving(character) || smart.moving) return;
