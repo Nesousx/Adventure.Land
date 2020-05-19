@@ -1,6 +1,6 @@
 # Adventure.Land
 
-NB: forked from : https://github.com/johnnyawesome/Adventure.Land
+*NB: forked from : https://github.com/johnnyawesome/Adventure.Land*
 
 This is my code for Adventure.Land, an epic indie MMO RPG, where you have to write JavaScript code to fully automate everything that happens. You can check out [Adventure.Land here.](https://adventure.land/) This is the [Youtube Trailer of the game](
 https://www.youtube.com/watch?v=HJAj9u2TEZc).
