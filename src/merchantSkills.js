@@ -11,11 +11,12 @@ let trashName = ["cclaw", "crabclaw", "shoes1", "coat1", "pants1",
 				"redenvelopev1", "redenvelopev2", "redenvelopev3", "", "", "", 
 				"ornament", "mistletoe", "candycane", "merry", "", "",
 				"x0", "x1", "x2", "x3", "x4", "x5", "x6", "x7", "x8"];
-let mPotionThreshold = 700;
+let mPotionThreshold = 100;
 let hPotionThreshold = 10;
 let sellItemLevel = 3;
 let profitMargin = 1.8;
 let manaReserve = 0.5;
+let upgradeLevel = 7;
 
 function merchantSkills(){
 
@@ -45,6 +46,7 @@ function merchantSkills(){
 		//Close merchant Stand
 		//parent.socket.emit("merchant", {close:1})
 		parent.close_merchant(41);
+		upgradeItems();
 		//Buy Potions
 		buyPotions();
 		relocateItems();
@@ -53,6 +55,7 @@ function merchantSkills(){
         smart_move({to:farmMap}, () => {
 			smart_move({x: farmCoord.x, y: farmCoord.y}, () => {
 				tranferPotions();
+				tranferItems();
 				merchantsLuck();
 				//Buy Scrolls
 				smart_move({to:"scrolls"}, () => {
@@ -84,6 +87,12 @@ function buyPotions(){
 		if(hPotions < hPotionThreshold )buy_with_gold("hpot0", hPotionThreshold - hPotions);
 		log("Bought Potions!");
 	}
+}
+
+function upgradeItems(){
+}
+
+function transferItems(){
 }
 
 function tranferPotions(){
@@ -282,7 +291,7 @@ function openMerchantStand(){
 	if(character.map != "main"){
 		smart_move({to:"main"}, () => {
 			smart_move({to:"town"}, () => {
-				smart_move({x: character.x  + 45, y: character.y - 70}, () => {
+				smart_move({x: character.x  + 60, y: character.y - 80}, () => {
 					//parent.socket.emit("merchant",{num:41});
 					parent.open_merchant(41);
 				});
@@ -290,7 +299,7 @@ function openMerchantStand(){
 		});
 	}else{
 		smart_move({to:"town"}, () => {
-			smart_move({x: character.x  + 45, y: character.y - 70}, () => {
+			smart_move({x: character.x  + 60, y: character.y - 80}, () => {
 				//parent.socket.emit("merchant",{num:41});
 				parent.open_merchant(41);
 			});

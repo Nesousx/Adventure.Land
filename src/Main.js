@@ -11,7 +11,7 @@ map_key("4", "snippet", "initParty()")
 map_key("5", "snippet", "stopCharacters()")
 
 //Custom Settings
-let ranger_name = "Redonx";
+//ranger.name = "Redonx";
 //Farming spots are found in G.maps.main
 //const farmMonsterName = "arcticbee";
 //const farmMap = "winterland";
