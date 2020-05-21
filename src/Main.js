@@ -7,6 +7,9 @@
 //load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/followLead");
 //load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/farmAssist");
 
+// Avoid disconnection
+var safeties=true; 
+
 //Hotkeys!
 map_key("3", "snippet", "loadCharacters()")
 map_key("4", "snippet", "initParty()")

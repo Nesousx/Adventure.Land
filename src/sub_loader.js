@@ -17,12 +17,12 @@ function load(url) {
 setInterval(function(){
     load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/Main.js");
     load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/sub_loader.js");
-    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/helperFunctions");
-    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/evadeTarget");
-    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/merchantSkills");
-    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/mageSkills");
-    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/priestSkills");
-    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/rangerSkills");
-    //load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/followLead");
-    //load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/farmAssist");
+    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/helperFunctions.js");
+    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/evadeTarget.js");
+    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/merchantSkills.js");
+    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/mageSkills.js");
+    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/priestSkills.js");
+    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/rangerSkills.js");
+    //load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/followLead.js");
+    //load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/farmAssist.js");
 }, 1000);
