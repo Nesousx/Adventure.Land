@@ -57,7 +57,7 @@ function main(){
         if(character.ctype === "ranger") rangerSkills(target, farmMonsterName);
         //Attacks the target
         autoFight(target);
-        game_log("Attacking...");
+        //game_log("Attacking...");
     }else{
         //Go to Farming Area
         getFarmingSpot(farmMonsterName, farmMap, farmMonsterNr, "move");
