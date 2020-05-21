@@ -180,7 +180,7 @@ function compoundItems(level){
 	   && triple.length === 3
 	   && !character.q.compound){
 		compound(triple[0],triple[1],triple[2],locate_item("cscroll0"));
-		log("Compounded an Item!");
+		log("Compounded an Item! - test");
 	}
 }
 
