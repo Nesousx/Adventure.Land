@@ -151,13 +151,13 @@ if (character.hp <= character.max_hp - 300 || character.mp<= character.max_hp - 
 function useRegenMP() {
 if (character.mp < character.max_mp - 100) {
   use('regen_mp');
-  game_log("Test - Used MP regen skill");	
+  //game_log("Test - Used MP regen skill");	
 	}
 }
 
 function useRegenHP() {
 if (character.hp < character.max_hp - 50) {
   use('regen_hp');
-  game_log("Test - Used HP regen skill");
+  //game_log("Test - Used HP regen skill");
 	}
 }
