@@ -1,7 +1,7 @@
 function loadCharacters() {
-	start_character("Redonx", "Main");
-	start_character("Mallet", "Main");
-	start_character("Bobbynator", "Main");
+	start_character("Redonx", "main_loader");
+	start_character("Mallet", "main_loader");
+	start_character("Bobbynator", "main_loader");
 	log("Loading Characters...");
 	setTimeout(initParty, 8000);
 }
