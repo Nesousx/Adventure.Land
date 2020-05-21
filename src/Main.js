@@ -4,11 +4,14 @@ load_code("merchantSkills");
 load_code("mageSkills");
 load_code("priestSkills");
 load_code("rangerSkills");
+//load_code("followLead");
+//load_code("farmAssist");
 
 //Hotkeys!
 map_key("3", "snippet", "loadCharacters()")
 map_key("4", "snippet", "initParty()")
 map_key("5", "snippet", "stopCharacters()")
+map_key("9", "snippet", "parent.load_code('Main');say('/pure_eval setTimeout(parent.start_runner, 500)');parent.stop_runner()");
 
 //Custom Settings
 //ranger.name = "Redonx";
@@ -16,9 +19,9 @@ map_key("5", "snippet", "stopCharacters()")
 //const farmMonsterName = "arcticbee";
 //const farmMap = "winterland";
 //const farmMonsterNr = 10;
-const farmMonsterName = "snake";
+const farmMonsterName = "crab";
 const farmMap = "main";
-const farmMonsterNr = 6;
+const farmMonsterNr = 8;
 const merchantName = "Bobbynator";
 const healthPotThreshold = 0.95, manaPotThreshold = 0.85;
 
@@ -31,7 +34,10 @@ function main(){
     //If character is moving, do nothing
     if(is_moving(character) || smart.moving) return;
     //Replenish Health and Mana
-    usePotions(healthPotThreshold, manaPotThreshold);
+    //usePotions(healthPotThreshold, manaPotThreshold);
+    usePotions();
+	useRegenMP();
+	useRegenHP();
     //Loot everything
     loot();
     

@@ -26,8 +26,8 @@ buy_hp = true; //Allow HP Pot Purchasing = true, Disallow HP Pot Purchasing = fa
 buy_mp = true; //Allow MP Pot Purchasing = true, Disallow MP Pot Purchasing = false
 hp_potion = 'hpot0'; //+200 HP Potion = 'hpot0', +400 HP Potion = 'hpot1' [always keep '' around it]
 mp_potion = 'mpot0'; //+300 MP Potion = 'mpot0', +500 MP Potion = 'mpot1' [always keep '' around it]
-pots_minimum = 50; //If you have less than this, you will buy more
-pots_to_buy = 1000; //This is how many you will buy
+pots_minimum = 100; //If you have less than this, you will buy more
+pots_to_buy = 500; //This is how many you will buy
 // Potion Maintenance //
 
 useInvis = false; //[Rogue Skill] //Enable going invisible on cooldown = true, Disable going invisible on cooldown = false
@@ -38,6 +38,48 @@ useSupershot = true; //[Ranger Skill] //Enable using supershot on cooldown = tru
 
 ////////////////////////////
 // Optional Settings End //
+//////////////////////////
+
+////////////////////////////
+// Init Group Begin //
+//////////////////////////
+
+function loadCharacters(){
+	start_character("Redonx", "Main");
+	start_character("Mallet", "Main");
+	start_character("Bobbynator", "Main");
+	log("Loading Characters...");
+	setTimeout(initParty, 8000);
+}
+
+function initParty(){
+	send_party_invite("Redonx");
+	send_party_invite("Mallet");
+	send_party_invite("Bobbynator");
+	log("Party Invites sent!");
+}
+
+function stopCharacters(){
+	stop_character("Redonx");
+	stop_character("Mallet");
+	stop_character("Bobbynator");
+	log("Characters stopped!");
+}
+
+//on_party_invite gets called _automatically_ by the game on an invite 
+function on_party_invite(name) {
+
+  if (get_player(name).owner != character.owner) return;
+  accept_party_invite(name);
+}
+
+//Hotkeys!
+map_key("3", "snippet", "loadCharacters()")
+map_key("4", "snippet", "initParty()")
+map_key("5", "snippet", "stopCharacters()")
+
+////////////////////////////
+// Init Group End //
 //////////////////////////
 
 //Grind Code start --------------------------

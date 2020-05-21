@@ -1,4 +1,4 @@
-function loadCharacters(){
+function loadCharacters() {
 	start_character("Redonx", "Main");
 	start_character("Mallet", "Main");
 	start_character("Bobbynator", "Main");
@@ -6,21 +6,21 @@ function loadCharacters(){
 	setTimeout(initParty, 8000);
 }
 
-function initParty(){
+function initParty() {
 	send_party_invite("Redonx");
 	send_party_invite("Mallet");
 	send_party_invite("Bobbynator");
 	log("Party Invites sent!");
 }
 
-function stopCharacters(){
+function stopCharacters() {
 	stop_character("Redonx");
 	stop_character("Mallet");
 	stop_character("Bobbynator");
 	log("Characters stopped!");
 }
 
-function getFarmingSpot(farmMonsterName = "snake", farmMap = "main", farmMonsterNr = 6, action){
+function getFarmingSpot(farmMonsterName = "crab", farmMap = "main", farmMonsterNr = 8, action){
 	for (map in G.maps){
 		for(monster in G.maps[map].monsters){
 			let currentMonster = G.maps[map].monsters[monster]
@@ -142,8 +142,22 @@ function on_party_invite(name) {
 }
 
 //Replenish Health and Mana
-function usePotions(healthPotThreshold = 0.9, manaPotThreshold = 0.9){
-    if(!character.rip
-        && (character.hp < (character.max_hp - 200)
-        || character.mp < (character.max_mp - 300))) use_hp_or_mp();
+function usePotions() {
+if (character.hp <= character.max_hp - 300 || character.mp<= character.max_hp - 250) {
+  use_hp_or_mp();
+	}
+}
+
+function useRegenMP() {
+if (character.mp < character.max_mp - 100) {
+  use('regen_mp');
+  //game_log("Used MP regen skill");	
+	}
+}
+
+function useRegenHP() {
+if (character.hp < character.max_hp - 50) {
+  use('regen_hp');
+  //game_log("Used HP regen skill");
+	}
 }
