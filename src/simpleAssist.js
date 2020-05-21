@@ -2,25 +2,27 @@
 // Init Group Begin //
 //////////////////////////
 
+var characters = ["Redonx", "Mallet", "Bobbynator"];
+
 function loadCharacters(){
-	start_character("Redonx", "");
-	start_character("Mallet", "");
-	start_character("Bobbynator", "");
+	for (var c of characters) {
+		start_character(c, "");
+	}
 	log("Loading Characters...");
 	setTimeout(initParty, 8000);
 }
 
 function initParty(){
-	send_party_invite("Redonx");
-	send_party_invite("Mallet");
-	send_party_invite("Bobbynator");
+	for (var c of characters) {
+		send_party_invite(c, "");
+	}
 	log("Party Invites sent!");
 }
 
 function stopCharacters(){
-	stop_character("Redonx");
-	stop_character("Mallet");
-	stop_character("Bobbynator");
+	for (var c of characters) {
+		stop_character(c, "");
+	}
 	log("Characters stopped!");
 }
 
@@ -28,8 +30,10 @@ function stopCharacters(){
 function on_party_invite(name) {
 
   if (get_player(name).owner != character.owner) return;
+  set_message("Ok I'm in");
   accept_party_invite(name);
 }
+
 
 //Hotkeys!
 map_key("3", "snippet", "loadCharacters()")
@@ -40,7 +44,8 @@ map_key("5", "snippet", "stopCharacters()")
 // Init Group End //
 //////////////////////////
 
-setInterval(function(){
+clearTimeout(window.loop);
+window.loop = setInterval(function(){
 	
 	//Merchant Skills are Tier 2 actions
     if(character.ctype === "merchant") return;
@@ -72,6 +77,11 @@ setInterval(function(){
 		if(currentTarget) change_target(currentTarget);
 		// Current target isn't empty and attackable.
 		attack(currentTarget);
+	}
+	
+	if (!leader) {
+		set_message("leader not ready");
+		return
 	}
 	
 	//Move to leader.
