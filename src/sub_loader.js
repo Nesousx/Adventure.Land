@@ -1,4 +1,4 @@
-load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/Main.js");
+load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/main.js");
 load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/helperFunctions.js");
 load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/evadeTarget.js");
 load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/merchantSkills.js");
