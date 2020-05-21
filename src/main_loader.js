@@ -15,5 +15,5 @@ function load(url) {
 
 // Reload code regularly
 setInterval(function(){
-    load("https://cdn.jsdelivr.net/gh/Nesousx/Adventure.Land/src/sub_loader.js");
+    load("https://www.alogh.com/Adventure.Land/src/sub_loader.js");
 }, 1000);
