@@ -1,7 +1,7 @@
 function loadCharacters() {
-	start_character("Redonx", "Main");
-	start_character("Mallet", "Main");
-	start_character("Bobbynator", "Main");
+	start_character("Redonx", "https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/Main.js");
+	start_character("Mallet", "https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/Main.js");
+	start_character("Bobbynator", "https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/Main.js");
 	log("Loading Characters...");
 	setTimeout(initParty, 8000);
 }
