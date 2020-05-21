@@ -15,5 +15,5 @@ function load(url) {
 
 // Reload code regularly
 setInterval(function(){
-    load("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/sub_loader.js");
+    load("https://cdn.jsdelivr.net/gh/Nesousx/Adventure.Land/src/sub_loader.js");
 }, 1000);
