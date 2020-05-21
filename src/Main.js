@@ -1,11 +1,11 @@
-load_code("helperFunctions");
-load_code("evadeTarget");
-load_code("merchantSkills");
-load_code("mageSkills");
-load_code("priestSkills");
-load_code("rangerSkills");
-//load_code("followLead");
-//load_code("farmAssist");
+load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/helperFunctions");
+load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/evadeTarget");
+load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/merchantSkills");
+load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/mageSkills");
+load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/priestSkills");
+load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/rangerSkills");
+//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/followLead");
+//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/farmAssist");
 
 //Hotkeys!
 map_key("3", "snippet", "loadCharacters()")
