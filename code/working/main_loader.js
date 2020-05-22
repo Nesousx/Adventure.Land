@@ -15,5 +15,5 @@ function load(url) {
 
 // Reload code regularly
 setInterval(function(){
-    load("https://www.alogh.com/Adventure.Land/working/sub_loader.js");
+    load("https://www.alogh.com/Adventure.Land/code/working/sub_loader.js");
 }, 1000);
