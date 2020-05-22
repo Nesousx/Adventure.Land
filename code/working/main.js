@@ -13,8 +13,8 @@ const farmMonsterNr = 6;
 const merchantName = "Bobbynator";
 const healthPotThreshold = 0.95, manaPotThreshold = 0.85;
 
-setInterval(main, 1000 / 4); // Loops every 1/4 seconds.
-setInterval(tier2Actions, 3000); // Loops every 3 seconds.
+//setInterval(main, 1000 / 4); // Loops every 1/4 seconds.
+//setInterval(tier2Actions, 3000); // Loops every 3 seconds.
 
 function main(){
     //If Character is dead, respawn
