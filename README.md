@@ -14,6 +14,6 @@
 
 ## Credits
 
-* Forked from : https://github.com/johnnyawesome/Adventure.Land
+* Forked from : [Johnny Awesome](https://github.com/johnnyawesome/Adventure.Land)
 * Phenx for the cool fix allowing to CODE outside of the game windows!
 * Many other people's CODE found on internet.
