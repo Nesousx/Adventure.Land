@@ -1,20 +1,5 @@
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/helperFunctions");
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/evadeTarget");
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/merchantSkills");
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/mageSkills");
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/priestSkills");
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/rangerSkills");
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/followLead");
-//load_code("https://raw.githubusercontent.com/Nesousx/Adventure.Land/master/src/farmAssist");
-
 // Avoid disconnection
 var safeties=true; 
-
-//Hotkeys!
-map_key("3", "snippet", "loadCharacters()")
-map_key("4", "snippet", "initParty()")
-map_key("5", "snippet", "stopCharacters()")
-//map_key("9", "snippet", "parent.load_code('Main');say('/pure_eval setTimeout(parent.start_runner, 500)');parent.stop_runner()");
 
 //Custom Settings
 //ranger.name = "Redonx";

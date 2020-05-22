@@ -1,24 +1,48 @@
-function loadCharacters() {
-	start_character("Redonx", "");
-	start_character("Mallet", "");
-	start_character("Bobbynator", "");
+////////////////////////////
+// Init Group Begin //
+//////////////////////////
+
+var characters = ["Redonx", "Mallet", "Bobbynator"];
+
+function loadCharacters(){
+	for (var c of characters) {
+		start_character(c, "");
+	}
 	log("Loading Characters...");
 	setTimeout(initParty, 8000);
 }
 
-function initParty() {
-	send_party_invite("Redonx");
-	send_party_invite("Mallet");
-	send_party_invite("Bobbynator");
+function initParty(){
+	for (var c of characters) {
+		send_party_invite(c, "");
+	}
 	log("Party Invites sent!");
 }
 
-function stopCharacters() {
-	stop_character("Redonx");
-	stop_character("Mallet");
-	stop_character("Bobbynator");
+function stopCharacters(){
+	for (var c of characters) {
+		stop_character(c, "");
+	}
 	log("Characters stopped!");
 }
+
+//on_party_invite gets called _automatically_ by the game on an invite 
+function on_party_invite(name) {
+
+  if (get_player(name).owner != character.owner) return;
+  set_message("Ok I'm in");
+  accept_party_invite(name);
+}
+
+
+//Hotkeys!
+map_key("3", "snippet", "loadCharacters()")
+map_key("4", "snippet", "initParty()")
+map_key("5", "snippet", "stopCharacters()")
+
+////////////////////////////
+// Init Group End //
+//////////////////////////
 
 function getFarmingSpot(farmMonsterName = "crab", farmMap = "main", farmMonsterNr = 8, action){
 	for (map in G.maps){
@@ -132,13 +156,6 @@ function relocateItems(){
     //Upgrade Scroll
     if(locate_item("scroll0") !== -1 
        && locate_item("scroll0") !== 40)swap(locate_item("scroll0"), 40);
-}
-
-//on_party_invite gets called _automatically_ by the game on an invite 
-function on_party_invite(name) {
-
-    if (get_player(name).owner != character.owner) return;
-    accept_party_invite(name);
 }
 
 //Replenish Health and Mana
