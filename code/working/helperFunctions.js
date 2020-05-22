@@ -44,7 +44,7 @@ map_key("5", "snippet", "stopCharacters()")
 // Init Group End //
 //////////////////////////
 
-function getFarmingSpot(farmMonsterName = "crab", farmMap = "main", farmMonsterNr = 8, action){
+function getFarmingSpot(farmMonsterName = "snake", farmMap = "main", farmMonsterNr = 6, action){
 	for (map in G.maps){
 		for(monster in G.maps[map].monsters){
 			let currentMonster = G.maps[map].monsters[monster]

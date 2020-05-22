@@ -7,9 +7,9 @@ var safeties=true;
 //const farmMonsterName = "arcticbee";
 //const farmMap = "winterland";
 //const farmMonsterNr = 10;
-const farmMonsterName = "crab";
+const farmMonsterName = "snake";
 const farmMap = "main";
-const farmMonsterNr = 8;
+const farmMonsterNr = 6;
 const merchantName = "Bobbynator";
 const healthPotThreshold = 0.95, manaPotThreshold = 0.85;
 
