@@ -1,0 +1,9 @@
+load("https://www.alogh.com/Adventure.Land/working/main.js");
+load("https://www.alogh.com/Adventure.Land/working/helperFunctions.js");
+load("https://www.alogh.com/Adventure.Land/working/evadeTarget.js");
+load("https://www.alogh.com/Adventure.Land/working/merchantSkills.js");
+load("https://www.alogh.com/Adventure.Land/working/mageSkills.js");
+load("https://www.alogh.com/Adventure.Land/working/priestSkills.js");
+load("https://www.alogh.com/Adventure.Land/working/rangerSkills.js");
+//load("https://www.alogh.com/Adventure.Land/working/followLead.js");
+//load("https://www.alogh.com/Adventure.Land/working/farmAssist.js");
