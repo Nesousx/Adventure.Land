@@ -1,9 +1,0 @@
-load("https://www.alogh.com/Adventure.Land/src/main.js");
-load("https://www.alogh.com/Adventure.Land/src/helperFunctions.js");
-load("https://www.alogh.com/Adventure.Land/src/evadeTarget.js");
-load("https://www.alogh.com/Adventure.Land/src/merchantSkills.js");
-load("https://www.alogh.com/Adventure.Land/src/mageSkills.js");
-load("https://www.alogh.com/Adventure.Land/src/priestSkills.js");
-load("https://www.alogh.com/Adventure.Land/src/rangerSkills.js");
-//load("https://www.alogh.com/Adventure.Land/src/followLead.js");
-//load("https://www.alogh.com/Adventure.Land/src/farmAssist.js");
